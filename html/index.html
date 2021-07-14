@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Landing Page Demo</title>
+    <style>
+        .auth-body-bg{
+            background-image: linear-gradient(0.25turn, #000000, #1f1d1d, #000000);
+            width: auto;
+            height: 1850px;
+        }
+        * {
+           -webkit-box-sizing: border-box;
+           -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        h3{
+            font-size: 30px;
+            margin-top: 0;
+            text-indent: 1em;
+            text-align: center;
+            color: white;
+            top: 50%;
+            left: 50%;
+            transform: translate(0%, -50%);
+        }
+        h4{
+            font-size: 25px;
+            margin-top: 0;
+            text-indent: 1em;
+            text-align: center;
+            color: white;
+            top: 50%;
+            left: 50%;
+            transform: translate(0%, 70%);
+        }
+        .form-check{
+            position: relative;
+            display: block;
+            transform: translate(0%, 130%);
+            padding: 0%;
+            overflow: visible;
+        }
+        .form-check input{
+            transform: translate(-2350%, -10%);
+            margin: 0 2px 0 0;
+                margin-top: 0px;
+                margin-right: 2px;
+                margin-bottom: 0px;
+                margin-left: 0px;
+            padding: 0%;
+        }
+        .form-check p{
+            height: 40px;
+            text-align: center;
+            font-size: 18px;
+            padding: 0%;
+            transform: translate(3%, 80%);
+        }
+        .form-register{
+            display: block;
+            position: relative;
+            transform: translate(37%, 400%);
+            cursor: pointer;
+        }
+        .form-register a{
+            height: 40px;
+            text-align: center;
+            transform: translate(50%, 400%);
+            font-size: 18px;
+            padding: 0%;
+        }
+        .form-register a:hover{
+            color: blue;
+            text-decoration: underline;
+        }
+        .auth-box-w a{
+            color: white;
+        }
+        .auth-box-w a:hover{
+            color: blue;
+            text-decoration: underline;
+        }
+        .contact{
+            position: relative;
+            transform: translate(0%, 150%);
+            -webkit-transition: .1s all ease-in-out;
+            -moz-transition: .1s all ease-in-out;
+            -o-transition: .1s all ease-in-out;
+            transition: .1s all ease-in-out;
+            cursor: pointer;
+        }
+        .contact a{
+            color: white;
+            font-size: 25px;
+            text-align: center;
+        }
+        .contact a:hover{
+            color: blue;
+            text-decoration: underline;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" href="assets/img/streamics video-white.png">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/background.css">
+    <link rel="stylesheet" type="text/css" href="css/register.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body class="auth-body-bg">
+    <div class="content-header">
+        <div class="logo"><a href="index.html"><img src="assets/img/streamics video-white.png"></a></div>
+        <a target="_blank" href="https://n9.cl/a83so" class="more-link">Go Streamics Video</a>
+    </div>
+    <h3>REGISTRO</h3>
+    <h4>Proporciona tus datos para registrarte</h4>
+    <div class="Register">
+         <div class="auth-box-w">
+             <form action="api/registro.php" method="POST" name="registro">
+                 <div class="form-group">
+                    <label>Nombre</label><br>
+                    <input class="form-control" type="text" id="nombre" placeholder="Escribe tu Nombre">
+                 </div>
+                 <div class="form-group">
+                    <label>Apellido</label><br>
+                    <input class="form-control" type="text" id="apellido" placeholder="Escribe tu Apellido">
+                 </div>
+                 <div class="form-group">
+                    <label>Dirección</label><br>
+                    <input class="form-control" type="text" id="dirección" placeholder="Escribe tu Dirección">
+                 </div>
+                 <div class="form-group">
+                    <label>Correo</label><br>
+                    <input class="form-control" type="text" id="correo" placeholder="Escribe tu Correo">
+                 </div>
+                 <div class="form-group">
+                    <label>Cédula</label><br>
+                    <input class="form-control" type="number" id="identificador" placeholder="Escribe tu Cédula">
+                 </div>
+             </form>
+             <div class="form-check"> 
+                 <p>Acepto los <a for="terminos y condiciones" target="_blank" href="assets/doc/Términos-y-Condiciones.pdf">terminos y condiciones</a>
+                    <input type="checkbox" name="terminos" id="terminos" aria-invalid="false">
+                 </p>
+             </div>
+             <button id="boton" class="button" onclick="send()">Registrarse</button>
+             <div class="form-register">
+                 <a href="login.html">Ya tengo mi registro</a>
+             </div>
+         </div>
+    </div>
+    <h1>Conoce más de nosotros</h1>
+    <div class="contents">
+        <section id="redes">
+            <div class="div-grid">
+                <div class="content-img-red">
+                    <a target="_blank" href="http://www.strmcs.com/?fbclid=IwAR3NZB5WIsZtWziYF_BdUYuSADb0dJlBTwvYxW6whOQ5Il8PXg-4-XleRn8"><img src="assets/img/streamics media-white.png"></a>
+                </div>
+                <div class="content-img-red">
+                    <a target="_blank" href="http://streamicslab.com/#/Home"><img src="assets/img/streamics lab-white.png"></a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="contact">
+        <center>
+            <a href="mailto:info@streamicslab.com" title="Enviar correo a Streamics">Enviar Mail</a>
+        </center>
+    </div>
+    <footer>
+        <div class="row footer-content">
+            <center><p>Somos una empresa con 20 años de experiencia en producción audiovisual, la Fábrica de Contenido perfecta para ti.</p></center>
+            <center><p>Demo Landing Page - Steamics Video | 2021 | Design Batch Tek</p></center>
+        </div>
+    </footer>
+    <script type="text/javascript">
+        function send(){
+            if (document.getElementById("nombre").value=="" ||
+                document.getElementById("apellido").value=="" ||
+                document.getElementById("dirección").value=="" ||
+                document.getElementById("correo").value=="" ||
+                document.getElementById("identificador").value=="") {
+                alert("Debe completar los campos solicitados");
+                return;
+            }
+            var fd=new FormData();
+            fd.append('nombre',document.getElementById("nombre").value);
+            fd.append('apellido',document.getElementById("apellido").value);
+            fd.append('dirección',document.getElementById("dirección").value);
+            fd.append('correo',document.getElementById("correo").value);
+            fd.append('identificador',document.getElementById("identificador").value);
+            var request = new XMLHttpRequest();
+            request.open('POST','api/registro.php');
+            request.onload=function (){
+                console.log(request);
+				if (request.readyState==4 && request.status==200) {
+					if (request.responseText=="1") {
+						alert("Se envió el mensaje correctamente");
+					}else{
+						alert("Hubo un error, intente más tarde");
+					}
+				}
+            }
+            request.send(fd);
+        }
+        </script>
+</body>
+</html>
